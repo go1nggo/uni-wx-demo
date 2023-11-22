@@ -1,0 +1,57 @@
+{
+	"pages": [
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"usingComponents": {}
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"usingComponents": {
+			"van-button": "/wxcomponents/dist/button/index",
+			"van-grid": "/wxcomponents/dist/grid/index",
+			"van-grid-item": "/wxcomponents/dist/grid-item/index",
+			"van-index-bar": "/wxcomponents/dist/index-bar/index",
+			"van-index-anchor": "/wxcomponents/dist/index-anchor/index"
+		  }
+	},
+	"tabBar": {
+		"custom": true,
+		"color": "#7A7E83",
+		"selectedColor": "#3cc51f",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [
+		  {
+			"pagePath": "pages/index/index",
+			"iconPath": "static/tabbar/icon_component.png",
+			"selectedIconPath": "static/tabbar/icon_component_HL.png",
+			"text": "首页"
+		  },
+		  {
+			"pagePath": "pages/home/index",
+			"iconPath": "static/tabbar/icon_API.png",
+			"selectedIconPath": "static/tabbar/icon_API_HL.png",
+			"text": "我的"
+		  }
+		]
+	},
+	"easycom": {
+		"custom": {
+			"^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue"
+		}
+	}
+}
